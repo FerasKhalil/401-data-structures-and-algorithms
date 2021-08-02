@@ -55,18 +55,21 @@ class LinkedList():
     #### CODE  CHALLENGE 7
     def kth(self,number):
         current = self.head
-        list_length=0
+        list_length=1
         while current.next:
             list_length+=1
             current=current.next
         current=self.head
-        print(list_length)
-        target = list_length - number
+        if number > list_length:
+            return("Input is greater than the length of the linked list")
+        elif number < 0:
+            return("Input k is not a positive integer")
+        target = list_length - number - 1
         print(target)
         for i in range(list_length):
             if i == target:
-                print(i)
-                return current.value
+                print(current.value)
+                return(current.value)
             else:
                 current=current.next
 
