@@ -48,7 +48,8 @@ class LinkedList():
 
     def insert_after():
         pass
-
+#   #####################################
+    ### END CODE CHALLENGE 6 END ###################
          
    
     #     ##########################################\
@@ -72,6 +73,28 @@ class LinkedList():
                 return(current.value)
             else:
                 current=current.next
+                 #     ##########################################\
+    #### END CODE  CHALLENGE 7 END #################
+
+#####################################################
+##### CODE  CHALLENGE 8
+    def zip_lists(l1,l2):
+    
+        lister=LinkedList()
+        current1=l1.head
+        current2=l2.head
+        previous1=current1.next
+        previous2=current2.next
+       
+        while current1:
+            # lister.append(current1)
+            lister.append(current1.value)
+            current1=previous1.next
+            # current1.next=current1.next
+            
+
+        
+
 
 
 

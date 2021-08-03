@@ -1,23 +1,7 @@
 ###### TEST CODE CHALLENGE 5
 import pytest
 from linked_list.linked_list import LinkedList, Node
-node1 = Node(1)
-node2 = Node(2)
-node3 = Node(6)
-node4 = Node(4)
-node5 = Node(9)
-node6 = Node(25)
-node7 = Node(14)
-node8 = Node(3)
-list = LinkedList()
-list.head = node1
-node1.next = node2
-node2.next = node3
-node3.next = node4
-node4.next = node5
-node5.next = node6
-node6.next = node7
-node7.next = node8
+
 
 # def test_import():
 #     assert LinkedList
@@ -52,7 +36,24 @@ node7.next = node8
 
 
 
-
+#### # # # # # #      CODE CHALLEGEN 7           # # # # # # # # 
+node1 = Node(1)
+node2 = Node(2)
+node3 = Node(6)
+node4 = Node(4)
+node5 = Node(9)
+node6 = Node(25)
+node7 = Node(14)
+node8 = Node(3)
+list = LinkedList()
+list.head = node1
+node1.next = node2
+node2.next = node3
+node3.next = node4
+node4.next = node5
+node5.next = node6
+node6.next = node7
+node7.next = node8
 
 def test_kth_greater_than_the_length_of_the_linked_list():
     actual = list.kth(10)
@@ -78,3 +79,17 @@ def test_linked_list_size_1():
     actual = linked_list.kth(0)
     expected = 5
     assert actual == expected
+    #### # # # # # #   END   CODE CHALLEGEN 7         END  # # # # # # # # 
+#
+#### # # # # # # # # #  CHALLENGE 8 # # # # # # # # # # # # # ## #
+def test_zip_lists():
+    l1=LinkedList()
+    l2=LinkedList()
+    l1.append(1)
+    l1.append(3)
+    l1.append(5)
+    l2.append(2)
+    l2.append(4)
+    actual=list.zip_lists(l1,l2)
+    expected='head-> {1} -> {2} -> {3} -> {4} -> {5} -> NULL'
+    assert expected==actual
