@@ -33,21 +33,21 @@ class LinkedList():
     #   #####################################
     ### CODE CHALLENGE 6
 
-    def append(self,value=''):
-        print(value)
-        node = Node(value)
-        current = self.head
+    # def append(self,value=''):
+    #     print(value)
+    #     node = Node(value)
+    #     current = self.head
 
-        while current.next != None:
-            current = current.next
-        current.next = node
+    #     while current.next != None:
+    #         current = current.next
+    #     current.next = node
 
-    def insert_before(self,value, new_value):
-        pass
+    # def insert_before(self,value, new_value):
+    #     pass
 
 
-    def insert_after():
-        pass
+    # def insert_after():
+    #     pass
 #   #####################################
     ### END CODE CHALLENGE 6 END ###################
          
@@ -72,7 +72,11 @@ class LinkedList():
     #             print(current.value)
     #             return(current.value)
     #         else:
+<<<<<<< HEAD
                 # current=current.next
+=======
+    #             current=current.next
+>>>>>>> 0ece4f6ffca44fdfe11e25e0aa6cf5ca3c031edc
                  #     ##########################################\
     #### END CODE  CHALLENGE 7 END #################
 
@@ -92,7 +96,11 @@ class LinkedList():
     #         current1=previous1.next
     #         # current1.next=current1.next
             
+####################  END CHALLENGE 8
 
+#######CODE CHALLENGE 10 # # # # ## # ## #### # ## # ######  ## ####
+
+<<<<<<< HEAD
        ##### # # # # # #CHALLENGE 8  
 
 
@@ -100,6 +108,62 @@ class LinkedList():
     
 
 
+=======
+class Stack:
+    def __init__(self,node=None):
+        self.top=node
+
+    def push(self,value):
+        node = Node(value)
+        node.next = self.top
+        self.top = node      
+    
+    def pop(self):
+        if self.top == None:
+            return "this is an empty stack amigo"
+        else:    
+            temp = self.top
+            self.top = self.top.next
+            temp.next = None
+            return temp.value
+
+    def peek(self):
+        if self.top == None:
+            return "this is an empty stack amigo"
+        else:
+            return self.top.value
+                          
+    def is_empty (self):
+        if self.top == None:
+            return False
+        else:
+            return True    
+
+  
+class Queue:
+    def __init__(self):
+        self.front = None
+        self.rear = None
+
+
+    def enqueue(self , value):
+        node=Node(value)
+        if self.front == None:
+            self.front = node
+            self.rear = node
+        else:
+            self.rear.next = node    
+            self.rear = node    
+
+    def peek(self):
+        if self.front==None:
+            return "empty queue amigo"
+        else:
+            return self.front.value    
+     
+##### END CHALLENGE 10  # # #  # # # ## ## # # ## # # # # # # # ## # ## 
+        
+>>>>>>> 0ece4f6ffca44fdfe11e25e0aa6cf5ca3c031edc
 
 
     # 9 9 99 9 99 99 9 9 9 9 9 9 9 9 9  99 9  9
