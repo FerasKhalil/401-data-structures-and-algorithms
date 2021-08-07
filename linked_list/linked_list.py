@@ -1,5 +1,5 @@
 class Node:
-    ### CODE CHALLENGE  5
+    ### CODE CHALLENGE  5 LINKED LISTS
     def __init__(self,value=""):
         self.value=value
         # self.pointer=pointer
@@ -11,15 +11,21 @@ class Node:
 class LinkedList():
     def __init__(self):
         self.head = None
+        
     def insert(self, value):
         node = Node(value)
         if self.head:
             node.next=self.head
         self.head = node    
 
-    def some_method(self):
-        # method body here
-        pass
+    def includes(self,value):
+        current = self.head
+        while current:
+            if current.value == value:
+                return True
+            current = current.next
+        return False        
+        
 
     def __str__(self):
         current = self.head
@@ -27,7 +33,7 @@ class LinkedList():
         while current:
             string += str(current) + " -> "
             current = current.next
-        string += "None"
+        string += "NULL"
         return string
 
     #   #####################################
