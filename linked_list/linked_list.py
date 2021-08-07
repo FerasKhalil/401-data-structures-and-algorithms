@@ -1,6 +1,5 @@
-
 class Node:
-    ### CODE CHALLENGE  5
+    ### CODE CHALLENGE  5 LINKED LISTS
     def __init__(self,value=""):
         self.value=value
         # self.pointer=pointer
@@ -10,25 +9,32 @@ class Node:
 
 
 class LinkedList():
-    """
-    Put docstring here
-    """
     def __init__(self):
-        # initialization here
         self.head = None
-        # self.next = None
+        
     def insert(self, value):
         node = Node(value)
         if self.head:
             node.next=self.head
         self.head = node    
 
-    def some_method(self):
-        # method body here
-        pass
+    def includes(self,value):
+        current = self.head
+        while current:
+            if current.value == value:
+                return True
+            current = current.next
+        return False        
+        
 
     def __str__(self):
-        return str(self.head)
+        current = self.head
+        string = ""
+        while current:
+            string += str(current) + " -> "
+            current = current.next
+        string += "NULL"
+        return string
 
     #   #####################################
     ### CODE CHALLENGE 6
@@ -152,13 +158,39 @@ class Queue:
         
 
 
+    # 9 9 99 9 99 99 9 9 9 9 9 9 9 9 9  99 9  9
+    def reverse_lister(list):
+          
+        previous = None
+        current = list.head     
+        after = current.next   
+  
+        while current:
+            current.next = previous 
+            previous = current      
+            current = after        
+            if after:               
+                after = after.next
 
+        list.head = previous
 
 if __name__ == "__main__":
-    new = LinkedList()
-    new.append(3)
-    print(new)
-    first_instant = LinkedList('hello')
-    print (str(first_instant))    
-    print(first_instant.next)
-    
+    # new = LinkedList()
+    # new.append(3)
+    # print(new)
+    # first_instant = LinkedList('hello')
+    # print (str(first_instant))    
+    # print(first_instant.next)
+
+    lister = LinkedList()
+    node1 = Node(4)
+    node2 = Node(3)
+    node3 = Node(2)
+    node4 = Node(1)
+    lister.head=node1
+    node1.next=node2
+    node2.next=node3
+    node3.next=node4
+    print(lister) 
+    lister.reverse_lister()    
+    print(lister)
