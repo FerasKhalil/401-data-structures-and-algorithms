@@ -72,11 +72,7 @@ class LinkedList():
     #             print(current.value)
     #             return(current.value)
     #         else:
-<<<<<<< HEAD
-                # current=current.next
-=======
     #             current=current.next
->>>>>>> 0ece4f6ffca44fdfe11e25e0aa6cf5ca3c031edc
                  #     ##########################################\
     #### END CODE  CHALLENGE 7 END #################
 
@@ -100,15 +96,6 @@ class LinkedList():
 
 #######CODE CHALLENGE 10 # # # # ## # ## #### # ## # ######  ## ####
 
-<<<<<<< HEAD
-       ##### # # # # # #CHALLENGE 8  
-
-
-    ############################################ 9
-    
-
-
-=======
 class Stack:
     def __init__(self,node=None):
         self.top=node
@@ -163,7 +150,6 @@ class Queue:
      
 ##### END CHALLENGE 10  # # #  # # # ## ## # # ## # # # # # # # ## # ## 
         
->>>>>>> 0ece4f6ffca44fdfe11e25e0aa6cf5ca3c031edc
 
 
     # 9 9 99 9 99 99 9 9 9 9 9 9 9 9 9  99 9  9
