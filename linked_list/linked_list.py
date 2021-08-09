@@ -126,61 +126,7 @@ class LinkedList():
             
 ####################  END CHALLENGE 8
 
-#######CODE CHALLENGE 10 # # # # ## # ## #### # ## # ######  ## ####
 
-# class Stack:
-#     def __init__(self,node=None):
-#         self.top=node
-
-#     def push(self,value):
-#         node = Node(value)
-#         node.next = self.top
-#         self.top = node      
-    
-#     def pop(self):
-#         if self.top == None:
-#             return "this is an empty stack amigo"
-#         else:    
-#             temp = self.top
-#             self.top = self.top.next
-#             temp.next = None
-#             return temp.value
-
-#     def peek(self):
-#         if self.top == None:
-#             return "this is an empty stack amigo"
-#         else:
-#             return self.top.value
-                          
-#     def is_empty (self):
-#         if self.top == None:
-#             return False
-#         else:
-#             return True    
-
-  
-# class Queue:
-#     def __init__(self):
-#         self.front = None
-#         self.rear = None
-
-
-#     def enqueue(self , value):
-#         node=Node(value)
-#         if self.front == None:
-#             self.front = node
-#             self.rear = node
-#         else:
-#             self.rear.next = node    
-#             self.rear = node    
-
-#     def peek(self):
-#         if self.front==None:
-#             return "empty queue amigo"
-#         else:
-#             return self.front.value    
-     
-# ##### END CHALLENGE 10  # # #  # # # ## ## # # ## # # # # # # # ## # ## 
         
 
 
