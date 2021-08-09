@@ -97,7 +97,7 @@ class AnimalShelter:
         else:
             return 'type should only be dog or cat'
     def dequeue_animal(self,pref):
-        
+        pass
 
 
 

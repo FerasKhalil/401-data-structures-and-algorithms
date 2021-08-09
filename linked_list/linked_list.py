@@ -39,7 +39,6 @@ class LinkedList():
         string += "NULL"
         return string
 
-    #   #####################################
     ### CODE CHALLENGE 6
 
     def append(self,value=''):
@@ -79,52 +78,44 @@ class LinkedList():
                 current.next = node
                 break
             current = current.next
-        
-#   #####################################
-    ### END CODE CHALLENGE 6 END ###################
-         
    
-    #     ##########################################\
     #### CODE  CHALLENGE 7
-    # def kth(self,number):
-    #     current = self.head
-    #     list_length=1
-    #     while current.next:
-    #         list_length+=1
-    #         current=current.next
-    #     current=self.head
-    #     if number > list_length:
-    #         return("Input is greater than the length of the linked list")
-    #     elif number < 0:
-    #         return("Input k is not a positive integer")
-    #     target = list_length - number - 1
-    #     print(target)
-    #     for i in range(list_length):
-    #         if i == target:
-    #             print(current.value)
-    #             return(current.value)
-    #         else:
-    #             current=current.next
-                 #     ##########################################\
-    #### END CODE  CHALLENGE 7 END #################
+    def kth(self,number):
+        current = self.head
+        list_length=1
+        while current.next:
+            list_length+=1
+            current=current.next
+        current=self.head
+        if number > list_length:
+            return("Input is greater than the length of the linked list")
+        elif number < 0:
+            return("Input k is not a positive integer")
+        target = list_length - number - 1
+        print(target)
+        for i in range(list_length):
+            if i == target:
+                print(current.value)
+                return(current.value)
+            else:
+                current=current.next
 
-#####################################################
-##### CODE  CHALLENGE 8
-    # def zip_lists(l1,l2):
+#### CODE  CHALLENGE 8
+    def zip_lists(l1,l2):
     
-    #     lister=LinkedList()
-    #     current1=l1.head
-    #     current2=l2.head
-    #     previous1=current1.next
-    #     previous2=current2.next
+        lister=LinkedList()
+        current1=l1.head
+        current2=l2.head
+        previous1=current1.next
+        previous2=current2.next
        
-    #     while current1:
-    #         # lister.append(current1)
-    #         lister.append(current1.value)
-    #         current1=previous1.next
-    #         # current1.next=current1.next
+        while current1:
+            # lister.append(current1)
+            lister.append(current1.value)
+            current1=previous1.next
+            # current1.next=current1.next
             
-####################  END CHALLENGE 8
+
 
 
         
