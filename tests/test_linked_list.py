@@ -74,78 +74,79 @@ from stack_and_queues.stack_and_queues import Node,Queue,Stack,AnimalShelter
 #     new_value = 10
 #     assert LinkedList.insert_before(value,new_value) ==
 
-def test_add_to_end_linked_list():
-    node1=Node(1)
-    node2=Node(2)
-    node1.next=node2
-    lister = LinkedList()
-    lister.head=node1
-    lister.append(9)
-    assert lister.__str__() == "1 -> 2 -> 9 -> NULL"
+# # # # # CHALLENGE 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6
+# def test_add_to_end_linked_list():
+#     node1=Node(1)
+#     node2=Node(2)
+#     node1.next=node2
+#     lister = LinkedList()
+#     lister.head=node1
+#     lister.append(9)
+#     assert lister.__str__() == "1 -> 2 -> 9 -> NULL"
 
-def test_add_multiple_to_end_of_linked_list():
-    node1=Node(1)
-    node2=Node(2)
-    lister = LinkedList()
-    lister.head=node1
-    node1.next=node2
-    lister.append(6)
-    lister.append(8)
-    assert lister.__str__() == "1 -> 2 -> 6 -> 8 -> NULL"
+# def test_add_multiple_to_end_of_linked_list():
+#     node1=Node(1)
+#     node2=Node(2)
+#     lister = LinkedList()
+#     lister.head=node1
+#     node1.next=node2
+#     lister.append(6)
+#     lister.append(8)
+#     assert lister.__str__() == "1 -> 2 -> 6 -> 8 -> NULL"
 
-def test_insert_node_before_node_located_in_the_middle_of_linked_list():
-    node1=Node(1)
-    node2=Node(2)
-    node3=Node(3)
-    node4=Node(4)
-    linked_list = LinkedList()
-    linked_list.head=node1
-    node1.next=node2
-    node2.next=node3
-    node3.next=node4
-    linked_list.insert_before(3,5)
-    assert linked_list.__str__() == "1 -> 2 -> 5 -> 3 -> 4 -> NULL"
+# def test_insert_node_before_node_located_in_the_middle_of_linked_list():
+#     node1=Node(1)
+#     node2=Node(2)
+#     node3=Node(3)
+#     node4=Node(4)
+#     linked_list = LinkedList()
+#     linked_list.head=node1
+#     node1.next=node2
+#     node2.next=node3
+#     node3.next=node4
+#     linked_list.insert_before(3,5)
+#     assert linked_list.__str__() == "1 -> 2 -> 5 -> 3 -> 4 -> NULL"
 
-def test_insert_node_before_the_first_node():
-    node1=Node(1)
-    node2=Node(2)
-    node3=Node(3)
-    node4=Node(4)
-    linked_list = LinkedList()
-    linked_list.head=node1
-    node1.next=node2
-    node2.next=node3
-    node3.next=node4
-    linked_list.insert_before(1,5)
-    assert linked_list.__str__() == "5 -> 1 -> 2 -> 3 -> 4 -> NULL"
+# def test_insert_node_before_the_first_node():
+#     node1=Node(1)
+#     node2=Node(2)
+#     node3=Node(3)
+#     node4=Node(4)
+#     linked_list = LinkedList()
+#     linked_list.head=node1
+#     node1.next=node2
+#     node2.next=node3
+#     node3.next=node4
+#     linked_list.insert_before(1,5)
+#     assert linked_list.__str__() == "5 -> 1 -> 2 -> 3 -> 4 -> NULL"
 
-def test_insert_after_node_located_in_the_middle_of_linked_list():
-    node1=Node(1)
-    node2=Node(2)
-    node3=Node(3)
-    node4=Node(4)
-    linked_list = LinkedList()
-    linked_list.head=node1
-    node1.next=node2
-    node2.next=node3
-    node3.next=node4
-    linked_list.insert_after(2,5)
-    assert linked_list.__str__() == "1 -> 2 -> 5 -> 3 -> 4 -> NULL"
+# def test_insert_after_node_located_in_the_middle_of_linked_list():
+#     node1=Node(1)
+#     node2=Node(2)
+#     node3=Node(3)
+#     node4=Node(4)
+#     linked_list = LinkedList()
+#     linked_list.head=node1
+#     node1.next=node2
+#     node2.next=node3
+#     node3.next=node4
+#     linked_list.insert_after(2,5)
+#     assert linked_list.__str__() == "1 -> 2 -> 5 -> 3 -> 4 -> NULL"
 
-def test_insert_node_after_the_last_node():
-    node1=Node(1)
-    node2=Node(2)
-    node3=Node(3)
-    node4=Node(4)
-    linked_list = LinkedList()
-    linked_list.head=node1
-    node1.next=node2
-    node2.next=node3
-    node3.next=node4
-    linked_list.insert_after(4,5)
-    assert linked_list.__str__() == "1 -> 2 -> 3 -> 4 -> 5 -> NULL"
+# def test_insert_node_after_the_last_node():
+#     node1=Node(1)
+#     node2=Node(2)
+#     node3=Node(3)
+#     node4=Node(4)
+#     linked_list = LinkedList()
+#     linked_list.head=node1
+#     node1.next=node2
+#     node2.next=node3
+#     node3.next=node4
+#     linked_list.insert_after(4,5)
+#     assert linked_list.__str__() == "1 -> 2 -> 3 -> 4 -> 5 -> NULL"
 
-
+# # # #END CHALLENGE 6 66 6 6 6 6 6 6 6 6 6 66 6 6 6 66 6 6 6 
 
 # # # # # CHALLENGE 10 # # # # # # # ## # # 
 # def test_push():
@@ -245,51 +246,51 @@ def test_insert_node_after_the_last_node():
 
 
 
-#### # # # # # #      CODE CHALLEGEN 7           # # # # # # # # 
-# node1 = Node(1)
-# node2 = Node(2)
-# node3 = Node(6)
-# node4 = Node(4)
-# node5 = Node(9)
-# node6 = Node(25)
-# node7 = Node(14)
-# node8 = Node(3)
-# list = LinkedList()
-# list.head = node1
-# node1.next = node2
-# node2.next = node3
-# node3.next = node4
-# node4.next = node5
-# node5.next = node6
-# node6.next = node7
-# node7.next = node8
+#### # # # # # #      CODE CHALLENGE 7           # # # # # # # # 
+node1 = Node(1)
+node2 = Node(2)
+node3 = Node(6)
+node4 = Node(4)
+node5 = Node(9)
+node6 = Node(25)
+node7 = Node(14)
+node8 = Node(3)
+list = LinkedList()
+list.head = node1
+node1.next = node2
+node2.next = node3
+node3.next = node4
+node4.next = node5
+node5.next = node6
+node6.next = node7
+node7.next = node8
 
-# def test_kth_greater_than_the_length_of_the_linked_list():
-#     actual = list.kth(10)
-#     expected = "Input is greater than the length of the linked list"
-#     assert actual == expected
+def test_kth_greater_than_the_length_of_the_linked_list():
+    actual = list.kth(10)
+    expected = "Input is greater than the length of the linked list"
+    assert actual == expected
 
-# #Where k and the length of the list are the same
-# def test_k_same_length_as_list():
-#     actual = list.kth(7)
-#     expected = 1
-#     assert actual == expected
+#Where k and the length of the list are the same
+def test_k_same_length_as_list():
+    actual = list.kth(7)
+    expected = 1
+    assert actual == expected
 
-# def test_k_is_not_postive_integer():
-#     actual = list.kth(-3)
-#     expected = "Input k is not a positive integer"
-#     assert actual == expected
+def test_k_is_not_postive_integer():
+    actual = list.kth(-3)
+    expected = "Input k is not a positive integer"
+    assert actual == expected
 
-# def test_linked_list_size_1():
-#     alone_node = Node(5)
-#     linked_list=LinkedList()
-#     linked_list.head = alone_node
+def test_linked_list_size_1():
+    alone_node = Node(5)
+    linked_list=LinkedList()
+    linked_list.head = alone_node
 
-#     actual = linked_list.kth(0)
-#     expected = 5
-    # assert actual == expected
-    #### # # # # # #   END   CODE CHALLEGEN 7         END  # # # # # # # # 
-#
+    actual = linked_list.kth(0)
+    expected = 5
+    assert actual == expected
+
+
 #### # # # # # # # # #  CHALLENGE 8 # # # # # # # # # # # # # ## #
 # def test_zip_lists():
 #     l1=LinkedList()
