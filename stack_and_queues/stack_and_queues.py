@@ -200,6 +200,35 @@ class Queue:
 
         list.head = previous
 
+class AnimalShelter:
+    def __init__(self):
+        self.dog_front = None
+        self.dog_rear = None
+        self.cat_front = None
+        self.cat_rear = None
+
+    def enqueue_animal(self,animal):
+        user_animal = AnimalShelter(animal)
+        if user_animal.type=='dog':
+            if self.dog_front == None:
+                self.dog_front = user_animal
+                self.dog_rear = user_animal
+            else:
+                self.dog_rear.next = user_animal
+                self.dog_rear = user_animal
+        elif user_animal.type == 'cat':
+            if self.cat_front == None:
+                self.cat_front = user_animal
+                self.cat_rear = user_animal
+            else:
+                self.cat_rear.next = user_animal
+                self.cat_rear = user_animal
+        else:
+            return 'type should only be dog or cat'
+                                  
+
+
+
 if __name__ == "__main__":
     # new = LinkedList()
     # new.append(3)
