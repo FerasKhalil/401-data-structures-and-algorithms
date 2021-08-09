@@ -73,6 +73,76 @@ def test_linked_list_return_all_nodes_values():
 #     new_value = 10
 #     assert LinkedList.insert_before(value,new_value) ==
 
+def test_add_to_end_linked_list():
+    node1=Node(1)
+    node2=Node(2)
+    node1.next=node2
+    lister = LinkedList()
+    lister.head=node1
+    lister.append(9)
+    assert lister.__str__() == "1 -> 2 -> 9 -> NULL"
+
+def test_add_multiple_to_end_of_linked_list():
+    node1=Node(1)
+    node2=Node(2)
+    lister = LinkedList()
+    lister.head=node1
+    node1.next=node2
+    lister.append(6)
+    lister.append(8)
+    assert lister.__str__() == "1 -> 2 -> 6 -> 8 -> NULL"
+
+def test_insert_node_before_node_located_in_the_middle_of_linked_list():
+    node1=Node(1)
+    node2=Node(2)
+    node3=Node(3)
+    node4=Node(4)
+    linked_list = LinkedList()
+    linked_list.head=node1
+    node1.next=node2
+    node2.next=node3
+    node3.next=node4
+    linked_list.insert_before(3,5)
+    assert linked_list.__str__() == "1 -> 2 -> 5 -> 3 -> 4 -> NULL"
+
+def test_insert_node_before_the_first_node():
+    node1=Node(1)
+    node2=Node(2)
+    node3=Node(3)
+    node4=Node(4)
+    linked_list = LinkedList()
+    linked_list.head=node1
+    node1.next=node2
+    node2.next=node3
+    node3.next=node4
+    linked_list.insert_before(1,5)
+    assert linked_list.__str__() == "5 -> 1 -> 2 -> 3 -> 4 -> NULL"
+
+def test_insert_after_node_located_in_the_middle_of_linked_list():
+    node1=Node(1)
+    node2=Node(2)
+    node3=Node(3)
+    node4=Node(4)
+    linked_list = LinkedList()
+    linked_list.head=node1
+    node1.next=node2
+    node2.next=node3
+    node3.next=node4
+    linked_list.insert_after(2,5)
+    assert linked_list.__str__() == "1 -> 2 -> 5 -> 3 -> 4 -> NULL"
+
+def test_insert_node_after_the_last_node():
+    node1=Node(1)
+    node2=Node(2)
+    node3=Node(3)
+    node4=Node(4)
+    linked_list = LinkedList()
+    linked_list.head=node1
+    node1.next=node2
+    node2.next=node3
+    node3.next=node4
+    linked_list.insert_after(4,5)
+    assert linked_list.__str__() == "1 -> 2 -> 3 -> 4 -> 5 -> NULL"
 
 
 

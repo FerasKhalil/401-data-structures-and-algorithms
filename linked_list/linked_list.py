@@ -1,3 +1,6 @@
+from typing import NewType
+
+
 class Node:
     ### CODE CHALLENGE  5 LINKED LISTS
     def __init__(self,value=""):
@@ -39,21 +42,44 @@ class LinkedList():
     #   #####################################
     ### CODE CHALLENGE 6
 
-    # def append(self,value=''):
-    #     print(value)
-    #     node = Node(value)
-    #     current = self.head
+    def append(self,value=''):
+        node = Node(value)
+        current = self.head
+        if self.head == None:
+            self.head = node
+        else:  
+            while current.next != None:
+                current = current.next
+            current.next = Node(value)
 
-    #     while current.next != None:
-    #         current = current.next
-    #     current.next = node
+    def insert_before(self,value, new_value):
+        node = Node(new_value)
+        current = self.head
+        previous = self.head
+        while current!=None:
+            if current.value == value: 
+                if current == previous:
+                    self.head = node
+                    node.next = current
+                    break
+                else:
+                    previous.next = node
+                    node.next = current
 
-    # def insert_before(self,value, new_value):
-    #     pass
+            previous = current
+            current = current.next
 
 
-    # def insert_after():
-    #     pass
+    def insert_after(self,value,new_value):
+        node = Node(new_value)
+        current = self.head
+        while current:
+            if current.value == value:
+                node.next = current.next
+                current.next = node
+                break
+            current = current.next
+        
 #   #####################################
     ### END CODE CHALLENGE 6 END ###################
          
