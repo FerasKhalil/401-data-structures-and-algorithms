@@ -128,77 +128,77 @@ class LinkedList():
 
 #######CODE CHALLENGE 10 # # # # ## # ## #### # ## # ######  ## ####
 
-class Stack:
-    def __init__(self,node=None):
-        self.top=node
+# class Stack:
+#     def __init__(self,node=None):
+#         self.top=node
 
-    def push(self,value):
-        node = Node(value)
-        node.next = self.top
-        self.top = node      
+#     def push(self,value):
+#         node = Node(value)
+#         node.next = self.top
+#         self.top = node      
     
-    def pop(self):
-        if self.top == None:
-            return "this is an empty stack amigo"
-        else:    
-            temp = self.top
-            self.top = self.top.next
-            temp.next = None
-            return temp.value
+#     def pop(self):
+#         if self.top == None:
+#             return "this is an empty stack amigo"
+#         else:    
+#             temp = self.top
+#             self.top = self.top.next
+#             temp.next = None
+#             return temp.value
 
-    def peek(self):
-        if self.top == None:
-            return "this is an empty stack amigo"
-        else:
-            return self.top.value
+#     def peek(self):
+#         if self.top == None:
+#             return "this is an empty stack amigo"
+#         else:
+#             return self.top.value
                           
-    def is_empty (self):
-        if self.top == None:
-            return False
-        else:
-            return True    
+#     def is_empty (self):
+#         if self.top == None:
+#             return False
+#         else:
+#             return True    
 
   
-class Queue:
-    def __init__(self):
-        self.front = None
-        self.rear = None
+# class Queue:
+#     def __init__(self):
+#         self.front = None
+#         self.rear = None
 
 
-    def enqueue(self , value):
-        node=Node(value)
-        if self.front == None:
-            self.front = node
-            self.rear = node
-        else:
-            self.rear.next = node    
-            self.rear = node    
+#     def enqueue(self , value):
+#         node=Node(value)
+#         if self.front == None:
+#             self.front = node
+#             self.rear = node
+#         else:
+#             self.rear.next = node    
+#             self.rear = node    
 
-    def peek(self):
-        if self.front==None:
-            return "empty queue amigo"
-        else:
-            return self.front.value    
+#     def peek(self):
+#         if self.front==None:
+#             return "empty queue amigo"
+#         else:
+#             return self.front.value    
      
-##### END CHALLENGE 10  # # #  # # # ## ## # # ## # # # # # # # ## # ## 
+# ##### END CHALLENGE 10  # # #  # # # ## ## # # ## # # # # # # # ## # ## 
         
 
 
-    # 9 9 99 9 99 99 9 9 9 9 9 9 9 9 9  99 9  9
-    def reverse_lister(list):
+#     # 9 9 99 9 99 99 9 9 9 9 9 9 9 9 9  99 9  9
+#     def reverse_lister(list):
           
-        previous = None
-        current = list.head     
-        after = current.next   
+#         previous = None
+#         current = list.head     
+#         after = current.next   
   
-        while current:
-            current.next = previous 
-            previous = current      
-            current = after        
-            if after:               
-                after = after.next
+#         while current:
+#             current.next = previous 
+#             previous = current      
+#             current = after        
+#             if after:               
+#                 after = after.next
 
-        list.head = previous
+#         list.head = previous
 
 if __name__ == "__main__":
     # new = LinkedList()
