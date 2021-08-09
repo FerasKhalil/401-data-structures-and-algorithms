@@ -73,6 +73,85 @@ def test_linked_list_return_all_nodes_values():
 #     new_value = 10
 #     assert LinkedList.insert_before(value,new_value) ==
 
+def test_add__node_to_the_end_of_the_linked_list():
+    node1=Node(1)
+    node2=Node(2)
+    node3=Node(3)
+    node4=Node(4)
+    linked_list = LinkedList()
+    linked_list.head=node1
+    node1.next=node2
+    node2.next=node3
+    node3.next=node4
+    linked_list.append(5)
+    assert linked_list.__str__() == "1 -> 2 -> 3 -> 4 -> 5 -> None"
+
+def test_add_multiple_nodes_to_the_end_of_linked_list():
+    node1=Node(1)
+    node2=Node(2)
+    node3=Node(3)
+    node4=Node(4)
+    linked_list = LinkedList()
+    linked_list.head=node1
+    node1.next=node2
+    node2.next=node3
+    node3.next=node4
+    linked_list.append(5)
+    linked_list.append(6)
+    linked_list.append(7)
+    assert linked_list.__str__() == "1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> None"
+
+def test_insert_node_before_node_located_in_the_middle_of_linked_list():
+    node1=Node(1)
+    node2=Node(2)
+    node3=Node(3)
+    node4=Node(4)
+    linked_list = LinkedList()
+    linked_list.head=node1
+    node1.next=node2
+    node2.next=node3
+    node3.next=node4
+    linked_list.insert_before(3,5)
+    assert linked_list.__str__() == "1 -> 2 -> 5 -> 3 -> 4 -> None"
+
+def test_insert_node_before_the_first_node():
+    node1=Node(1)
+    node2=Node(2)
+    node3=Node(3)
+    node4=Node(4)
+    linked_list = LinkedList()
+    linked_list.head=node1
+    node1.next=node2
+    node2.next=node3
+    node3.next=node4
+    linked_list.insert_before(1,5)
+    assert linked_list.__str__() == "5 -> 1 -> 2 -> 3 -> 4 -> None"
+
+def test_insert_after_node_located_in_the_middle_of_linked_list():
+    node1=Node(1)
+    node2=Node(2)
+    node3=Node(3)
+    node4=Node(4)
+    linked_list = LinkedList()
+    linked_list.head=node1
+    node1.next=node2
+    node2.next=node3
+    node3.next=node4
+    linked_list.insert_after(2,5)
+    assert linked_list.__str__() == "1 -> 2 -> 5 -> 3 -> 4 -> None"
+
+def test_insert_node_after_the_last_node():
+    node1=Node(1)
+    node2=Node(2)
+    node3=Node(3)
+    node4=Node(4)
+    linked_list = LinkedList()
+    linked_list.head=node1
+    node1.next=node2
+    node2.next=node3
+    node3.next=node4
+    linked_list.insert_after(4,5)
+    assert linked_list.__str__() == "1 -> 2 -> 3 -> 4 -> 5 -> None"
 
 
 
