@@ -32,6 +32,7 @@ all functions are tested and everything runs perfectly
 
 # CHALLENGE 7
 # link to pull request:
+(https://github.com/FirasHasan/401-data-structures-and-algorithms/pull/9)
 
 # link to miro
 (https://miro.com/app/board/o9J_l5exNKI=/)
