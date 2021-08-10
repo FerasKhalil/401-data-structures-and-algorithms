@@ -51,3 +51,26 @@ space is O(1)
 ## Solution
 it runs just fine i included the code in the white board and also in these files
 all functions are tested and everything runs perfectly
+
+
+
+
+# CHALLENGE 8
+
+# link to miro
+(https://miro.com/app/board/o9J_l5exNKI=/)
+
+# Challenge Summary
+need to make a function that Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list.
+
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+![zip-lists](whiteboards/zip_lists_8(2).jpg)
+
+## Approach & Efficiency
+time is O(n)
+space is O(n)
+
+## Solution
+it runs just fine i included the code in the white board and also in these files
+a test runs and passes successfully
