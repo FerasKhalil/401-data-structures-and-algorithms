@@ -74,3 +74,27 @@ space is O(n)
 ## Solution
 it runs just fine i included the code in the white board and also in these files
 a test runs and passes successfully
+
+
+
+# CHALLENGE 13
+
+# Challenge Summary
+<!-- Description of the challenge -->
+*you need to write a function that accepts 1 parameter that is a string
+then check if the string is a bracket whether parentheses, curly bracket or square bracket, and check if the brackets close correctly
+
+
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+![stack-queue-brackets](whiteboards/brackets-stack-queue.jpg)
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+time is o(n)
+space is o(1)
+
+## Solution
+<!-- Show how to run your code, and examples of it in action -->
+it runs just fine i included the code in the white board and also in these files
+3 tests runs and passes successfully
