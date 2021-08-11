@@ -64,8 +64,9 @@ class Queue:
         else:
             return self.front.value    
      
-##### END CHALLENGE 10  # # #  # # # ## ## # # ## # # # # # # # ## # ## 
         
+
+
 
 
     # 9 9 99 9 99 99 9 9 9 9 9 9 9 9 9  99 9  9
@@ -98,6 +99,15 @@ class AnimalShelter:
             return 'type should only be dog or cat'
     def dequeue_animal(self,pref):
         pass
+
+
+# # # CHALLENGE 13 # # # # # # #
+def validate_brackets(input):
+
+    if input.count('[') == input.count(']') and input.count('{') == input.count('}') and input.count('(') == input.count(')'):
+        return True
+    else:
+        return False    
 
 
 

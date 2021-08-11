@@ -2,7 +2,7 @@
 import pytest
 from linked_list.linked_list import LinkedList, Node
 from stack_and_queues.stack_and_queues import Node,Queue,Stack,AnimalShelter
-
+from stack_and_queues.stack_and_queues import validate_brackets
 
 # def test_import():
 #     assert LinkedList
@@ -292,23 +292,23 @@ from stack_and_queues.stack_and_queues import Node,Queue,Stack,AnimalShelter
 
 
 #### # # # # # # # # #  CHALLENGE 8 # # # # # # # # # # # # # ## #
-def test_zip_list_same_length():
-    node1=Node(1)
-    node2=Node(2)
-    node3=Node(3)
-    node4=Node(4)
-    node1.next=node2
-    node2.next=node3
-    node3.next=node4
+# def test_zip_list_same_length():
+#     node1=Node(1)
+#     node2=Node(2)
+#     node3=Node(3)
+#     node4=Node(4)
+#     node1.next=node2
+#     node2.next=node3
+#     node3.next=node4
 
-    lister1 = LinkedList()
-    lister2 = LinkedList()
-    lister3 = LinkedList()
-    lister1.head=node1
-    lister2.head=node1
-    lister3 = lister3.zip_lists(lister1,lister2)
-    actual = "1 -> 1 -> 2 -> 2 -> 3 -> 3 -> 4 -> 4 -> NULL"
-    assert lister3.__str__() == actual
+#     lister1 = LinkedList()
+#     lister2 = LinkedList()
+#     lister3 = LinkedList()
+#     lister1.head=node1
+#     lister2.head=node1
+#     lister3 = lister3.zip_lists(lister1,lister2)
+#     actual = "1 -> 1 -> 2 -> 2 -> 3 -> 3 -> 4 -> 4 -> NULL"
+#     assert lister3.__str__() == actual
 
 
 # # # # # # CHALLENGE 10 # # # # # # # ## # # 
@@ -406,3 +406,23 @@ def test_zip_list_same_length():
 #     expected="empty queue amigo"
 #     assert expected==queue.peek()
  # # # # #  END CHALLENGE 10 # # ##  # # # # # 
+
+
+
+
+ # # ## CHALLENGE 13 # # # # # 
+ 
+def test_validate_bracket():
+    actual=validate_brackets('{}[]()')
+    expected=True
+    assert actual==expected
+
+def test_weird_validate_bracket():
+    actual=validate_brackets('{](})}))}}')
+    expected=False
+    assert actual==expected
+
+def test_string_inside_validate_bracket():
+    actual=validate_brackets('[[hello Hamzeh]]()')
+    expected=True
+    assert actual==expected    
