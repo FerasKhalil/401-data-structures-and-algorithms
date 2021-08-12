@@ -98,3 +98,20 @@ space is o(1)
 <!-- Show how to run your code, and examples of it in action -->
 it runs just fine i included the code in the white board and also in these files
 3 tests runs and passes successfully
+
+# code chellenge 15 TREES
+[click for link to pull request:](https://github.com/FirasHasan/401-data-structures-and-algorithms/pull/13)
+
+# Trees
+- Trees are nonlinear data structures.
+- A tree can be empty with no nodes.
+- Trees can be traversed with either depth first or breadth first.
+
+## Challenge
+<!-- Description of the challenge -->
+Need to make a class that will be responsible for creating nodes, another binary tree class which will traverse using tree methods: InOrder,PreOrder and PostOrder. the last class will be binary search tree class which will know exactly where to put whatever value we want to store in the tree in its right place. this class will also have another method to check if the value already exists in the tree.
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
+## API
+<!-- Description of each method publicly available in each of your trees -->
