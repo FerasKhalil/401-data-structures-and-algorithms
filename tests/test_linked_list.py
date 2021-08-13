@@ -4,6 +4,7 @@ from linked_list.linked_list import LinkedList, Node
 from stack_and_queues.stack_and_queues import Node,Queue,Stack,AnimalShelter
 from stack_and_queues.stack_and_queues import validate_brackets
 
+
 # def test_import():
 #     assert LinkedList
 
@@ -412,17 +413,17 @@ from stack_and_queues.stack_and_queues import validate_brackets
 
  # # ## CHALLENGE 13 # # # # # 
  
-def test_validate_bracket():
-    actual=validate_brackets('{}[]()')
-    expected=True
-    assert actual==expected
+# def test_validate_bracket():
+#     actual=validate_brackets('{}[]()')
+#     expected=True
+#     assert actual==expected
 
-def test_weird_validate_bracket():
-    actual=validate_brackets('{](})}))}}')
-    expected=False
-    assert actual==expected
+# def test_weird_validate_bracket():
+#     actual=validate_brackets('{](})}))}}')
+#     expected=False
+#     assert actual==expected
 
-def test_string_inside_validate_bracket():
-    actual=validate_brackets('[[hello Hamzeh]]()')
-    expected=True
-    assert actual==expected    
+# def test_string_inside_validate_bracket():
+#     actual=validate_brackets('[[hello Hamzeh]]()')
+#     expected=True
+#     assert actual==expected    
