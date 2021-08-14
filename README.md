@@ -115,3 +115,30 @@ Need to make a class that will be responsible for creating nodes, another binary
 
 ## API
 <!-- Description of each method publicly available in each of your trees -->
+
+
+
+# Stacks and Queues
+<!-- Short summary or background information -->
+Stack is a container of objects that are inserted and removed according to the last-in first-out (LIFO) principle. Queue is a container of objects (a linear collection) that are inserted and removed according to the first-in first-out (FIFO) principle.
+## Challenge
+<!-- Description of the challenge -->
+- This code should be able to make nodes, stacks and queues correctly with the ability to add nodes to those stacks and queues and also to take out nodes out of them.
+- This code should also include an isempty function that when invoked it checks if the stack/queue is empty or not.
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+stacks: 1. time complexity: O(1) 2. space compexity: O(n)
+queues: 1. time complexity: O(1) 2. space complexity:  O(n)
+## API
+<!-- Description of each method publicly available to your Stack and Queue-->
+**Queue class**
+- enqueue method adds nodes to the beginning of the queue. 
+- dequeue method takes out the first node added to the queue and then the second etc..
+- peek returns value of the node located at the front of the queue
+- is_empty returns boolean indicating whether or not the queue is empty
+**Stack Class**
+- push method adds nodes to the stack
+- pop method takes out the last node added to the stack
+- peek returns value of the node located at the top of the stack
+- is_empty returns boolean indicating whether or not the stack is empty.
