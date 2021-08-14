@@ -9,6 +9,8 @@ class Node:
     def __str__(self):
         return str(self.value)    
 
+class EmptyStackOrQueueException(Exception):
+    	pass
  
 #######CODE CHALLENGE 10 # # # # ## # ## #### # ## # ######  ## ####
 
@@ -60,10 +62,23 @@ class Queue:
 
     def peek(self):
         if self.front==None:
-            return "empty queue amigo"
+            raise Exception("empty queue amigo")
         else:
             return self.front.value    
-     
+    
+    def is_empty(self):
+        return self.front == None
+
+
+    def dequeue(self):
+
+        if self.front:
+            current = self.front
+            self.front = current.next
+            current.next=None
+            return current.value
+        else:
+            raise Exception('Queue is Empty')    
         
 
 
