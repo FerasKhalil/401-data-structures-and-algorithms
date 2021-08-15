@@ -38,6 +38,15 @@ class BinaryTree:
         if root.right:
              self.post_order(root.right)
 
+    def maximum_tree_value(self):
+        all_tree_values = self.in_order(self.root)
+        max_val = self.root.value
+        for i in all_tree_values:
+            if i > max_val:
+                 max_val = i
+        return max_val
+         
+
 
 class BinraySearchTree(BinaryTree):
     def __init__(self,node=None):
