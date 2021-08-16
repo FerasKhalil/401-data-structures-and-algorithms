@@ -75,7 +75,8 @@ class BinraySearchTree(BinaryTree):
         else:
             print("value is already in the tree")        
 
-
+    def breadth_first(self,tree):
+        pass 
 
 if  __name__ == "__main__":
     treeing=BinraySearchTree()
