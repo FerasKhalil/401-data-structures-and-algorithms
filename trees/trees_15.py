@@ -50,7 +50,7 @@ class BinaryTree:
         self.pre_order_lister=[]
         self.in_order_lister=[]
         self.post_order_lister=[]
-
+# 
     def pre_order(self,root):
         self.pre_order_lister.append(root.value)
         if root.left:
@@ -95,17 +95,18 @@ class BinaryTree:
     def breadth_first(self,tree=None):
         lister=[]
         breadth_queue = Queue()
-        breadth_queue.enqueue(tree.root)
+        front = Node()
+        breadth_queue.enqueue(tree)
         while breadth_queue.peek():
-            self.front = breadth_queue.dequeue()
-            lister.append(self.front)
-            if self.front.left:
-                breadth_queue.enqueue(self.front.left)
-            if self.front.right:
-                breadth_queue.enqueue(self.front.right)
+            front = breadth_queue.dequeue()
+            lister.append(front)
+            if front.left:
+                breadth_queue.enqueue(front.left)
+            if front.right:
+                breadth_queue.enqueue(front.right)
         return lister        
          
-
+## # # # # # # # ###############################################
 
 class BinraySearchTree(BinaryTree):
     def __init__(self,node=None):

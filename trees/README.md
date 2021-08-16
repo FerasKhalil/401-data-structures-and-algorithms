@@ -19,12 +19,14 @@
 
 # Challenge Summary
 <!-- Description of the challenge -->
-
+- You need to write a function given 1 parameter that will return a list of all values in the tree, in the order they were encountered.
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-
+![breadth first 17](whiteboards/breadth_first.jpg)
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-
+- Big O of time complexity is o(h) which means it depends on the height of the tree
+- Big O of space complexity is o(n)
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
+- My code is still not working properly, it needs some changes.
