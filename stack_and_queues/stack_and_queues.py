@@ -86,14 +86,16 @@ class Queue:
 
     # 9 9 99 9 99 99 9 9 9 9 9 9 9 9 9  99 9  9
 
-
+# CHALLENGE 12
 class AnimalShelter:
     def __init__(self):
-        self.dog_front = None
-        self.dog_rear = None
-        self.cat_front = None
-        self.cat_rear = None
-
+        # self.dog_front = None
+        # self.dog_rear = None
+        # self.cat_front = None
+        # self.cat_rear = None
+        self.dog_queue=Queue()
+        self.cat_queue=Queue()
+        
     def enqueue_animal(self,animal):
         user_animal = AnimalShelter(animal)
         if user_animal.type=='dog':
