@@ -47,42 +47,54 @@ class Node:
 class BinaryTree:
     def __init__(self,root=None):
         self.root = root
-        self.pre_order_lister=[]
-        self.in_order_lister=[]
-        self.post_order_lister=[]
+
+
 # 
-    def pre_order(self,root):
-        self.pre_order_lister.append(root.value)
-        if root.left:
-            self.pre_order(root.left)
-        if root.right:
-            self.pre_order(root.right)
-        return self.pre_order_lister
+    def pre_order(self):
+        pre_order_lister=[]
 
-    def in_order(self,root):
-        self.in_order_lister.append(root.value)
-        if root.left:
-             self.in_order(root.left)
-        if root.right:
-             self.in_order(root.right)
-        return self.in_order_lister
+        def walk(root):
+            pre_order_lister.append(root.value)
 
-    def post_order(self,root):
-        if root.left:
-             self.post_order(root.left)
-        if root.right:
-             self.post_order(root.right)
+            if root.left:
+                walk(root.left)
+            if root.right:
+                walk(root.right)
+        walk(self.root)    
+        return pre_order_lister
 
-    def maximum_tree_value(self):
-        all_tree_values = self.in_order(self.root)
-        max_val = self.root.value
-        for i in all_tree_values:
-            if i > max_val:
-                 max_val = i
-        return max_val
+    def in_order(self):
+        in_order_lister=[]
+        def walk(root):
+            if root.left:
+                walk(root.left)
+            in_order_lister.append(root.value)
+            if root.right:
+                walk(root.right)
+        walk(self.root)
+        return in_order_lister
 
-        # def breadth_first(self,tree):
-    #     lister=[]
+    def post_order(self):
+        post_order_lister=[]
+        def walk(root):
+            if root.left:
+                walk(root.left)
+            if root.right:
+                walk(root.right)
+            post_order_lister.append(root.value)
+        walk(self.root)
+        return post_order_lister        
+
+    # def maximum_tree_value(self):
+    #     all_tree_values = self.in_order(self.root)
+    #     max_val = self.root.value
+    #     for i in all_tree_values:
+    #         if i > max_val:
+    #              max_val = i
+    #     return max_val
+
+    #     def breadth_first(self,tree):
+    #     lister=[] 
     #     if tree.root == None:
     #         return 'Empty tree'
     #     else:
