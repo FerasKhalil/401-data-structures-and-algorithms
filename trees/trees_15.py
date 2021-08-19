@@ -105,7 +105,31 @@ class BinaryTree:
             if front.right:
                 breadth_queue.enqueue(front.right)
         return lister        
-         
+
+    def fizz_buzz_tree(self,k_ary_tree):
+        if k_ary_tree.root == None:
+            return 'Empty Tree'
+        else:    
+            new_tree=[]
+            rooter = k_ary_tree.root
+            def walk(rooter):
+                if rooter.value%5 == 0 and rooter.value%3==0:
+                    new_tree.append('FizzBuzz')
+                elif rooter.value % 3 == 0 and rooter.value % 5 != 0:
+                    new_tree.append('Fizz')
+                elif rooter.value % 5 == 0 and rooter.value % 3 != 0:
+                    new_tree.append('Buzz')
+                else:
+                    new_tree.append(str(rooter.value))
+
+                if rooter.left != None:
+                    walk(rooter.left)
+                if rooter.right != None:
+                    walk(rooter.right)    
+                walk(rooter)
+
+            return new_tree
+
 ## # # # # # # # ###############################################
 
 class BinraySearchTree(BinaryTree):

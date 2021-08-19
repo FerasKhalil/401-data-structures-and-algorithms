@@ -30,3 +30,24 @@
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
 - My code is still not working properly, it needs some changes.
+
+
+# challenge 18
+
+# Challenge Summary
+<!-- Description of the challenge -->
+You need to write a function that replaces all nodes with 'FizzBuzz' if the answer was 0 when doing mode on 3 and 5
+and replace nodes with 'Fizz' if nodes were only equals 0 if mode by 3
+and replaces nodes with 'Buzz' if nodes were equal 0 when doing mode by 5 
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+![k-ary tree white board](trees/whiteboards/k-ary.jpg)
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+- Big O of time complexity is o(n) 
+- Big O of space complexity is o(n)
+
+## Solution
+<!-- Show how to run your code, and examples of it in action -->
+- still working on it

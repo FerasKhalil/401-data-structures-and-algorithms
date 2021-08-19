@@ -1,5 +1,5 @@
 from stack_and_queues.stack_and_queues import Queue
-from trees.trees_15 import Node, BinraySearchTree, BinaryTree
+from trees.trees_15 import *
 
 
 
@@ -34,20 +34,38 @@ from trees.trees_15 import Node, BinraySearchTree, BinaryTree
 
 
 ## ## # CHALLENGE 17
-def test_breadth_first_func():
+# def test_breadth_first_func():
+#     tree = BinaryTree()
+#     node1=Node(1)
+#     node2=Node(2)
+#     node3=Node(3)
+#     node4=Node(4)
+#     node5=Node(5)
+#     node6=Node(6)
+#     node7=Node(7)
+#     tree.root=node1
+#     node1.left=node2
+#     node1.right=node3
+#     node2.left=node4
+#     node2.right=node5
+#     node3.left=node6
+#     node3.right=node7
+#     assert tree.breadth_first(tree)=='1234567'
+
+def test_fizz_buzz_tree_empty():
     tree = BinaryTree()
-    node1=Node(1)
-    node2=Node(2)
-    node3=Node(3)
-    node4=Node(4)
-    node5=Node(5)
-    node6=Node(6)
-    node7=Node(7)
-    tree.root=node1
-    node1.left=node2
-    node1.right=node3
-    node2.left=node4
-    node2.right=node5
-    node3.left=node6
-    node3.right=node7
-    assert tree.breadth_first(tree)=='1234567'
+    actual = tree.fizz_buzz_tree(tree)
+    expected = "Empty Tree"
+    assert actual == expected
+
+
+# def test_fizzer_bizzer():
+#     tree = BinaryTree()
+#     node1=Node(1)
+#     node2=Node(2)
+#     node3=Node(3)
+#     tree.root=node1
+#     node1.left=node2
+#     node1.right=node3
+#     assert tree.fizz_buzz_tree(tree)==['1','2','Fizz']
+    
