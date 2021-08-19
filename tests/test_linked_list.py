@@ -1,9 +1,9 @@
 ###### TEST CODE CHALLENGE 5
-from collections import deque
-from typing import Deque
-import pytest
-from linked_list.linked_list import LinkedList, Node
-from stack_and_queues.stack_and_queues import EmptyStackOrQueueException, Node,Queue,Stack,AnimalShelter
+# from collections import deque
+# from typing import Deque
+# import pytest
+# from linked_list.linked_list import LinkedList, Node
+# from stack_and_queues.stack_and_queues import EmptyStackOrQueueException, Node,Queue,Stack,AnimalShelter
 # from stack_and_queues.stack_and_queues import
 
 

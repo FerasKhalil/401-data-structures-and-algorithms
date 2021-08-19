@@ -37,7 +37,7 @@ then check if the string is a bracket whether parentheses, curly bracket or squa
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-![stack-queue-brackets](whiteboards/brackets-stack-queue.jpg)
+![stack-queue-brackets](whiteboards/brackets.jpg)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->

@@ -119,14 +119,20 @@ class AnimalShelter:
 
 
 # # # CHALLENGE 13 # # # # # # #
-def validate_brackets(input):
-
-    if input.count('[') == input.count(']') and input.count('{') == input.count('}') and input.count('(') == input.count(')'):
+def validate_brackets(user_input):
+    stack_list = []
+    valid_brackets={")":"(","}":"{","]":"["}
+    for i in user_input:
+        if i in valid_brackets.values():
+            stack_list.append(i)
+        elif stack_list and valid_brackets[i] == stack_list[-1]:
+            stack_list.pop()     
+        else:
+            return False
+    if stack_list==[]:
         return True
     else:
-        return False    
-
-
+        return False            
 
 # if __name__ == "__main__":
 #     # new = LinkedList()
