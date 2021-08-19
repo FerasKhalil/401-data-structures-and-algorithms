@@ -1,4 +1,4 @@
-from stack_and_queues.stack_and_queues import Queue
+# from stack_and_queues.stack_and_queues import Queue
 from trees.trees_15 import *
 
 
@@ -52,11 +52,11 @@ from trees.trees_15 import *
 #     node3.right=node7
 #     assert tree.breadth_first(tree)=='1234567'
 
-def test_fizz_buzz_tree_empty():
-    tree = BinaryTree()
-    actual = tree.fizz_buzz_tree(tree)
-    expected = "Empty Tree"
-    assert actual == expected
+# def test_fizz_buzz_tree_empty():
+#     tree = BinaryTree()
+#     actual = tree.fizz_buzz_tree(tree)
+#     expected = "Empty Tree"
+#     assert actual == expected
 
 
 # def test_fizzer_bizzer():
