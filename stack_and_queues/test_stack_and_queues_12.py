@@ -130,13 +130,13 @@ from stack_and_queues.stack_and_queues_12 import *
 
  # # ## CHALLENGE 13 # # # # # 
  
-def test_validate_bracket():
-    actual=validate_brackets('()')
-    expected=True
-    assert actual==expected
+# def test_validate_bracket():
+#     actual=validate_brackets('()')
+#     expected=True
+#     assert actual==expected
 
-def test_weird_validate_bracket():
-    actual=validate_brackets('{](})}))}}')
-    expected=False
-    assert actual==expected
+# def test_weird_validate_bracket():
+#     actual=validate_brackets('{](})}))}}')
+#     expected=False
+#     assert actual==expected
 

@@ -1,3 +1,33 @@
+# Code challenge 15
+# Trees
+<!-- Short summary or background information -->
+- A tree is a hierarchical data structure defined as a collection of nodes. Nodes represent value and nodes are connected by edges. A tree has the following properties: The tree has one node called root
+## Challenge
+<!-- Description of the challenge -->
+1. You need to make a Binary tree class that uses 3 methods for traversing nodes 
+    - preorder
+    - inorder
+    - postorder
+- Make a binary search tree    
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+1. Binary tree 3 traversals 
+    - Big O of time is O(n)
+    - Big O of space is O(n)
+2. Binary search tree
+    - Big o of time is O(n)
+    - Big O of space is O(n)
+
+## API
+<!-- Description of each method publicly available in each of your trees -->
+- Pre order starts with the root then left then right nodes.
+- In order method starts with left then root then right.
+- Post order starts with left nodes then right nodes and then the root.
+
+
+
+
 # code challenge 16 maximum tree value
 # Challenge Summary
 <!-- Description of the challenge -->

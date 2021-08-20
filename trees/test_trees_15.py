@@ -69,3 +69,92 @@ from trees.trees_15 import *
 #     node1.right=node3
 #     assert tree.fizz_buzz_tree(tree)==['1','2','Fizz']
     
+
+# # # # # Challenge 15
+
+def test_instantiate_empty_tree():
+    binary_tree = BinaryTree
+    assert binary_tree
+
+
+def test_instantiate_tree_with_1_node():
+    binary_tree = BinaryTree
+    node=Node(1)
+    binary_tree.root=node
+    actual = binary_tree.root.value
+    expected = 1
+    assert actual == expected   
+
+def test_add_left_right_nodes_to_root():
+    binary_tree = BinaryTree
+    node1 = Node(1)
+    node2 = Node(2)
+    node3 = Node(3)
+    binary_tree.root=node1
+    node1.left = node2
+    node1.right = node3
+    actual1=node1.left.value
+    actual2=node1.right.value
+    expected1=2
+    expected2=3
+    assert actual1 == expected1
+    assert actual2 == expected2    
+
+
+
+def test_preorder():
+    binary_tree=BinaryTree()
+    node1 = Node(1)
+    node2 = Node(2)
+    node3 = Node(3)
+    node4 = Node(4)
+    node5 = Node(5)
+    node6 = Node(6)
+    binary_tree.root=node1
+    node1.left = node2
+    node1.right = node3
+    node2.left = node4
+    node2.right = node5
+    node3.left = node6
+    actual = binary_tree.pre_order()
+    expected =  [1, 2, 4, 5, 3, 6]
+    assert actual == expected    
+
+
+
+def test_inorder():
+    binary_tree=BinaryTree()
+    node1 = Node(1)
+    node2 = Node(2)
+    node3 = Node(3)
+    node4 = Node(4)
+    node5 = Node(5)
+    node6 = Node(6)
+    binary_tree.root=node1
+    node1.left = node2
+    node1.right = node3
+    node2.left = node4
+    node2.right = node5
+    node3.left = node6
+    actual = binary_tree.in_order()
+    expected = [4, 2, 5, 1, 6, 3]
+    assert actual == expected  
+
+def test_postorder():
+    binary_tree=BinaryTree()
+    node1 = Node(1)
+    node2 = Node(2)
+    node3 = Node(3)
+    node4 = Node(4)
+    node5 = Node(5)
+    node6 = Node(6)
+    binary_tree.root=node1
+    node1.left = node2
+    node1.right = node3
+    node2.left = node4
+    node2.right = node5
+    node3.left = node6
+    actual = binary_tree.post_order()
+    expected = [4, 5, 2, 6, 3, 1]
+    assert actual == expected      
+
