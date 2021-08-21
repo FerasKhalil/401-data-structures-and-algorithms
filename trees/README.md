@@ -52,7 +52,7 @@
 - You need to write a function given 1 parameter that will return a list of all values in the tree, in the order they were encountered.
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-![breadth first 17](whiteboards/breadth_first.jpg)
+![breadth first 17](whiteboards/breadth_first_17.jpg)
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 - Big O of time complexity is o(h) which means it depends on the height of the tree
