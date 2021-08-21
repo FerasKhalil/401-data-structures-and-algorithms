@@ -85,15 +85,15 @@ class BinaryTree:
         walk(self.root)
         return post_order_lister        
 
-    # def maximum_tree_value(self):
-    #     all_tree_values = self.in_order(self.root)
-    #     max_val = self.root.value
-    #     for i in all_tree_values:
-    #         if i > max_val:
-    #              max_val = i
-    #     return max_val
+    def maximum_tree_value(self):
+        all_tree_values = self.in_order(self.root)
+        max_val = self.root.value
+        for i in all_tree_values:
+            if i > max_val:
+                 max_val = i
+        return max_val
 
-    #     def breadth_first(self,tree):
+    # def breadth_first(self,tree):
     #     lister=[] 
     #     if tree.root == None:
     #         return 'Empty tree'
@@ -104,19 +104,38 @@ class BinaryTree:
     #             lister.append(tree.root.left)
     #         if tree.root.right:
     #             lister.append(tree.root.right)
-    def breadth_first(self,tree=None):
+
+    # def breadth_first(self,tree=None):
+    #     lister=[]
+    #     breadth_queue = Queue()
+    #     front = Node()
+    #     breadth_queue.enqueue(tree)
+    #     while breadth_queue.peek():
+    #         front = breadth_queue.dequeue()
+    #         lister.append(front)
+    #         if front.left:
+    #             breadth_queue.enqueue(front.left)
+    #         if front.right:
+    #             breadth_queue.enqueue(front.right)
+    #     return lister        
+    def breadth_first(tree):
+        rooter = tree.root
+        queue = Queue()
         lister=[]
-        breadth_queue = Queue()
-        front = Node()
-        breadth_queue.enqueue(tree)
-        while breadth_queue.peek():
-            front = breadth_queue.dequeue()
-            lister.append(front)
-            if front.left:
-                breadth_queue.enqueue(front.left)
-            if front.right:
-                breadth_queue.enqueue(front.right)
-        return lister        
+        if rooter == None:
+            return []
+        else:    
+            queue.enqueue(rooter)
+            while queue.peek():
+                front=queue.dequeue()
+                lister.append(front.value)
+                if front.left:
+                    queue.enqueue(front.left)
+                if front.right:
+                    queue.enqueue(front.right)
+            return lister        
+
+
 
     def fizz_buzz_tree(self,k_ary_tree):
         if k_ary_tree.root == None:
