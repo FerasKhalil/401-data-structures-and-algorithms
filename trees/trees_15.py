@@ -120,19 +120,20 @@ class BinaryTree:
     #     return lister        
     def breadth_first(tree):
         rooter = tree.root
-        queue = Queue()
-        lister=[]
         if rooter == None:
             return []
         else:    
-            queue.enqueue(rooter)
-            while queue.peek():
-                front=queue.dequeue()
+            # queue = Queue()
+            new_list=[]
+            lister=[]
+            new_list.append(rooter)
+            while new_list:
+                front=new_list.pop()
                 lister.append(front.value)
                 if front.left:
-                    queue.enqueue(front.left)
+                    new_list.append(front.left)
                 if front.right:
-                    queue.enqueue(front.right)
+                    new_list.append(front.right)
             return lister        
 
 
