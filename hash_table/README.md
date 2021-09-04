@@ -1,16 +1,16 @@
 # Hashtables
 <!-- Short summary or background information -->
-Hash tables allow the storage and retrieval of data in an average time of O(1). At its most basic level, a hash table data structure is just an array. Data is stored into this array at specific indices designated by a hash function. A hash function is a mapping between the set of input data and a set of integers
-
+- Hash tables allow the storage and retrieval of data in an average time of O(1). At its most basic level, a hash table data structure is just an array. Data is stored into this array at specific indices designated by a hash function. A hash function is a mapping between the set of input data and a set of integers
+- Source from (https://www.sparknotes.com/cs/searching/hashtables/summary/#:~:text=Hash%20tables%20allow%20the%20storage,and%20a%20set%20of%20integers.)
 ## Challenge
 <!-- Description of the challenge -->
-Implement a Hashtable Class with the following methods:
-add, contains, find, hash
+- Implement a Hashtable Class with the following methods:
+- add, contains, find, hash
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-Big O of time is: O(1)
-Big O of space is: O(n)
+- Big O of time is: O(1)
+- Big O of space is: O(n)
 
 ## API
 <!-- Description of each method publicly available in each of your hashtable -->
