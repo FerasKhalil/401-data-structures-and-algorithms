@@ -15,24 +15,24 @@
 ## API
 <!-- Description of each method publicly available in each of your hashtable -->
 - add method:
-    add a value to the hashtable by its key 
-    parameters:
-    key: a string
-    value: any type
-    Arrgument: key and value 
-    return: nothing
+add a value to the hashtable by its key 
+parameters:
+key: a string
+value: any type
+Arrgument: key and value 
+return: nothing
 
 
 - find method:
-    this function will search in the hashtable about the key and return the value
-    parameters:
-    key: a string
-    return: the value 
+this function will search in the hashtable about the key and return the value
+parameters:
+key: a string
+return: the value 
 
 
 - contains method: 
-   this function will check if the there is a value for the key 
-    parameters:
-    key: a string
-    return: a boolean
-    
+this function will check if the there is a value for the key 
+parameters:
+key: a string
+return: a boolean
+
