@@ -82,6 +82,11 @@ def repeated_word(user_input)->str:
         if dict[word]>1: 
             return word
 
+
+def tree_intersection( first_b_tree,second_b_tree):
+    pass
+
+
 if __name__ == "__main__":
     stringer = "Believe it or not, in this string the output should be the word: this ,  because it's the first repeated word."
 
