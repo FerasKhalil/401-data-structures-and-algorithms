@@ -1,47 +1,6 @@
 from collections import Counter
-class Node:
-    def __init__(self, value=""):
-        self.value = value
-        self.next = None
-
-    def __add__(self, other):
-        return Node(self.value + other.value)
-
-    def __str__(self):
-        return str(self.value)
-
-
-class LinkedList():
-
-    def __init__(self):
-        self.head = None
-
-    def insert(self, value):
-        node = Node(value)
-
-        if self.head:
-            node.next = self.head
-        self.head = node
-
-    def includes(self,vlaue):
-        current=self.head
-        while current :
-            if vlaue ==current.value[0]:
-                return True
-            current=current.next
-        return False
-
-    def append(self,value):
-        new_node=Node(value)
-        if self.head == None:
-            self.head = new_node
-        else:
-            current=self.head
-            while current.next:
-                current=current.next
-            current.next=new_node
-
-
+from trees.trees_15 import *
+from linked_list.linked_list import *
 
 
 class HashTable :
@@ -82,7 +41,21 @@ def repeated_word(user_input)->str:
         if dict[word]>1: 
             return word
 
-if __name__ == "__main__":
-    stringer = "Believe it or not, in this string the output should be the word: this ,  because it's the first repeated word."
 
-    print(repeated_word(stringer))
+def tree_intersection(first_b_tree,second_b_tree):
+    lister_1=first_b_tree.pre_order()
+    lister_2=second_b_tree.pre_order()
+    output_list=[]
+    for i in lister_1:
+        if i in lister_2:
+            output_list.append(i)
+    if output_list:
+        return output_list
+    else:
+        return 
+
+
+# if __name__ == "__main__":
+#     stringer = "Believe it or not, in this string the output should be the word: this ,  because it's the first repeated word."
+
+#     print(repeated_word(stringer))

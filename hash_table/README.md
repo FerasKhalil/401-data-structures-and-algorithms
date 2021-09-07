@@ -55,3 +55,28 @@ Big O of space is: O(1)
 <!-- Show how to run your code, and examples of it in action -->
 [Code Source](hash_table_1.py)
 [Code Tests Source](test_hash_table_1.py)
+
+
+
+
+### 32
+
+# Challenge Summary
+
+<!-- Description of the challenge -->
+
+- You need to write a function that 2 takes 2 trees as parameters and figures out which of the node values are in both trees
+
+## Whiteboard Process
+
+<!-- Embedded whiteboard image -->
+- ![Tree intersection](whiteboard/intersection_hash.jpg)
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+Time is: O(n)
+Space: O(n)
+## Solution
+<!-- Show how to run your code, and examples of it in action -->
+[Code Source](hash_table_1.py)
+[Test Source](test_hash_table_1.py)
