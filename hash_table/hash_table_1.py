@@ -27,19 +27,34 @@ class HashTable :
         return index
 
     def contains(self,key):    
-        index=self.hash(key)
+        index = self.hash(key)
         if self._buckets[index]:
-            return self._buckets[index].includes(key)
-        else:
-            return False
+            linked_list = self._buckets[index]
+            current = linked_list.head
+
+            while current!=None:
+                if current.value[0] == key:
+                    return True
+
+                current = current.next
+        return False
 
  
 def repeated_word(user_input)->str: 
-    splitter = user_input.split(' ') 
-    dict = Counter(splitter)  
-    for word in splitter: 
-        if dict[word]>1: 
-            return word
+    if not user_input:
+        return None
+    else:
+        hash_table=HashTable()
+        user_input = user_input.replace('.', '')
+        user_input = user_input.replace(',', '')
+        user_input = user_input.replace('-', '')
+        all_words=user_input.split()
+
+        for word in all_words:
+            word=word.lower()
+            if hash_table.contains(word):
+                return word
+            hash_table.add(word,word)    
 
 
 def tree_intersection(first_b_tree,second_b_tree):
@@ -55,7 +70,6 @@ def tree_intersection(first_b_tree,second_b_tree):
         return 
 
 
-# if __name__ == "__main__":
-#     stringer = "Believe it or not, in this string the output should be the word: this ,  because it's the first repeated word."
-
-#     print(repeated_word(stringer))
+if __name__ == "__main__":
+    stringer = "Once upon a time, there was a brave princess who..."
+    print(repeated_word(stringer))
