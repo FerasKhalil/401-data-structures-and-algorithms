@@ -55,7 +55,6 @@ class BinaryTree:
 
         def walk(root):
             pre_order_lister.append(root.value)
-
             if root.left:
                 walk(root.left)
             if root.right:
