@@ -70,7 +70,7 @@ Big O of space is: O(n)
 ## Whiteboard Process
 
 <!-- Embedded whiteboard image -->
-- ![Tree intersection](whiteboard/intersection_hash.jpg)
+- ![Tree intersection](whiteboard/tree_intersection.jpg)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
