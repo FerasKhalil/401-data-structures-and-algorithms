@@ -44,12 +44,12 @@ return: a boolean
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-![Repeated word](whiteboard/repeated_word.jpg)
+![Repeated word](whiteboard/repeated_word_CC31.jpg
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 Big O of time is: O(n)
-Big O of space is: O(1)
+Big O of space is: O(n)
 
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
