@@ -64,27 +64,27 @@ from hash_table.hash_table_1 import *
 
 
 ## CC32 Tree intersection:
-def test_hashmap_tree_intersection():
-    first_binary_tree=BinaryTree()
-    second_binary_tree=BinaryTree()
-    node1=Node(100)
-    node2=Node(10)
-    node3=Node(50)
+# def test_hashmap_tree_intersection():
+#     first_binary_tree=BinaryTree()
+#     second_binary_tree=BinaryTree()
+#     node1=Node(100)
+#     node2=Node(10)
+#     node3=Node(50)
     
-    first_binary_tree.root=node1
-    node1.left=node2
-    node1.right=node3
+#     first_binary_tree.root=node1
+#     node1.left=node2
+#     node1.right=node3
 
-    noder_1=Node(30)
-    noder_2=Node(10)
-    noder_3=Node(50)
+#     noder_1=Node(30)
+#     noder_2=Node(10)
+#     noder_3=Node(50)
 
-    second_binary_tree.root=noder_1
-    noder_1.left=noder_2
-    noder_1.right=noder_3
-    actual=tree_intersection(first_binary_tree,second_binary_tree)
-    expected = [10,50]
-    assert expected == actual
+#     second_binary_tree.root=noder_1
+#     noder_1.left=noder_2
+#     noder_1.right=noder_3
+#     actual=tree_intersection(first_binary_tree,second_binary_tree)
+#     expected = [10,50]
+#     assert expected == actual
 
 
 
