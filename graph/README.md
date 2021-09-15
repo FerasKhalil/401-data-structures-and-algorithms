@@ -38,4 +38,25 @@ Include the weight of the connection in the returned collection
 
 - size
 Arguments: none
-Returns the total number of nodes in the graph
+Returns the total number of nodes in the graph.
+
+
+
+## Challenge 36 breadth first traverse
+
+# Challenge Summary
+<!-- Description of the challenge -->
+- You should create a function that traverses a graph with breadth first.
+
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+![Breadth First](whiteboards/breadth_first.jpg)
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+- Time: O(n)
+- Space: O(n)
+
+## Solution
+<!-- Show how to run your code, and examples of it in action -->
+[Code](graph_1.py)

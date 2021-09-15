@@ -1,3 +1,4 @@
+from typing import Deque
 from stack_and_queues_12 import * 
 class Node:
     def __init__(self,value=""):
@@ -36,6 +37,24 @@ class Graph:
 
     def size(self):
         return len(self._adjacency_list)
+
+
+    def breadth_first(self,vertex):
+        nodes=[]
+        breadth=Queue()
+        visited=[]
+        breadth.enqueue(vertex)
+        visited.append(vertex)
+        while breadth:
+            front=breadth.dequeue()
+            nodes.append(front)
+            for i in nodes:
+                if i not in visited:
+                    visited.append(i)
+                    breadth.enqueue(i)
+        return nodes                
+
+
 
 def business_trip(graph_1,city_names):
     pass
