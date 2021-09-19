@@ -17,14 +17,14 @@
 # 		node.next = self.graph[dest]
 # 		self.graph[dest] = node
 
-# 	def link_2d_matrix_printer(self):
-# 		for i in range(self.V):
-# 			print("Adjacency list of vertex {}\n head".format(i), end="")
-# 			temp = self.graph[i]
-# 			while temp:
-# 				print(" -> {}".format(temp.vertex), end="")
-# 				temp = temp.next
-# 			print(" \n")
+	# def link_2d_matrix_printer(self):
+	# 	for i in range(self.V):
+	# 		print("Adjacency list of vertex {}\n head".format(i), end="")
+	# 		temp = self.graph[i]
+	# 		while temp:
+	# 			print(" -> {}".format(temp.vertex), end="")
+	# 			temp = temp.next
+	# 		print(" \n")
 
 
 # if __name__ == "__main__":
