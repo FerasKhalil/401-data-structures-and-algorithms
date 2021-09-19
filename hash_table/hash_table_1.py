@@ -101,7 +101,21 @@ def tree_intersection(first_b_tree,second_b_tree):
         return output_list
 
 
-# if __name__ == "__main__":
-    # stringer = "Once upon a time, there was a brave princess who..."
-    # print(repeated_word(stringer))
+def anagrams(string_1,string_2):
+    hasher = HashTable()
+    string_1=string_1.replace(' ','')
+    string_2=string_2.replace(' ','')
+    string_1=string_1.lower()
+    string_2=string_2.lower()
+    index_1 = hasher.hash(string_1)
+    index_2=hasher.hash(string_2)
+    if index_1 == index_2:
+        return True
+    else:
+        return False    
 
+
+if __name__ == "__main__":
+    str1="Astronomers"
+    str2="Moon starers"
+    print(anagrams(str1,str2))
